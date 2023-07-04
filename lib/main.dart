@@ -5,11 +5,12 @@ void main() {
     MaterialApp(
       home: Scaffold(
         body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [Colors.black, Colors.black26]),
-          ),
+          decoration: const BoxDecoration(color: Colors.black),
           child: const Center(
-            child: Text('hello world'),
+            child: Text(
+              'MR. Xeroz',
+              style: TextStyle(color: Colors.pink, fontSize: 28),
+            ),
           ),
         ),
       ),

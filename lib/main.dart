@@ -2,16 +2,13 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-          body: Container(
-        decoration: const BoxDecoration(
-          color: Colors.pink,
+        backgroundColor: Color.fromRGBO(136, 14, 79, 1),
+        body: Center(
+          child: Text('Hello Akashaf', style: TextStyle(fontSize: 30)),
         ),
-        child: const Center(
-          child: Text('Hello'),
-        ),
-      )),
+      ),
     ),
   );
 }

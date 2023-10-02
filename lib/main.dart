@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/screens/splash.dart';
 
 void main() {
-  runApp(
-    const MaterialApp(
-      home: Scaffold(
-        backgroundColor: Color.fromRGBO(136, 14, 79, 1),
-        body: Center(
-          child: Text('Hello Akashaf', style: TextStyle(fontSize: 30)),
-        ),
-      ),
-    ),
-  );
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: SplashScreen(),
+    );
+  }
 }
